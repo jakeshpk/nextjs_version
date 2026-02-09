@@ -9,9 +9,9 @@ export default function Gallery() {
     const projects = [
         {
             file: "L1.jpg",
-            title: "Kitchen Detail",
+            title: "Living Detail",
             type: "Interior",
-            alt: "Modern modular kitchen interior design with premium finishes by V4 Building Solutions Thrissur Kerala"
+            alt: "Living Room interior design with premium finishes by V4 Building Solutions Thrissur Kerala"
         },
         {
             file: "Nimal Front View.jpg",
@@ -24,6 +24,12 @@ export default function Gallery() {
             title: "Wash Area",
             type: "Interior",
             alt: "Elegant wash area and utility room design with modern plumbing solutions Kunnamkulam"
+        },
+        {
+            file: "kitchen 2.jpg",
+            title: "Kitchen",
+            type: "Interior",
+            alt: "Elegant Kitchen Area design with modern accessorires and solutions Kunnamkulam"
         },
         {
             file: "Living Room_1_R1.jpg",
