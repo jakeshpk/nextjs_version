@@ -270,7 +270,7 @@ export default function ServicePages({ activeService, onBack, onContactClick }) 
 
                     <h3 className="text-xl font-bold text-slate-800 mb-6">Gallery Highlight</h3>
                     <div className="grid md:grid-cols-3 gap-6 mb-12">
-                        {['L1.jpg', 'wash area_L.jpg', 'Living Room_1_R1.jpg', '07.jpg', 'living L1.jpg', 'Upper_Living.jpg','kitchen 2.png', 'Vyshak Exterior.png'].map((img, i) => (
+                        {['L1.jpg', 'wash area_L.jpg', 'Living Room_1_R1.jpg', '07.jpg', 'living L1.jpg', 'Upper_Living.jpg','kitchen 2.png', 'Vyshak Exterior.png', 'mallika ext .jpg'].map((img, i) => (
                             <div key={i} className="relative h-64 rounded-2xl overflow-hidden shadow-lg">
                                 <Image
                                     src={`/images/projects/${img}`}
