@@ -93,7 +93,7 @@ export default function Gallery() {
                                 className="min-w-[300px] md:min-w-[400px] h-[300px] rounded-2xl overflow-hidden relative group/card snap-center shadow-sm border border-white/50 flex-shrink-0"
                             >
                                 <Image
-                                    src={`/images/${project.file}`}
+                                    src={`/images/projects/${project.file}`}
                                     alt={project.alt}
                                     fill
                                     className="object-cover transition duration-700 group-hover/card:scale-110"

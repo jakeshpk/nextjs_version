@@ -120,7 +120,7 @@ export default function Services({ onServiceClick }) {
                             </div>
                             <div className="flex-1 w-full h-48 rounded-xl overflow-hidden relative">
                                 <Image
-                                    src="/images/Nimal Front View.jpg"
+                                    src="/images/projects/Nimal Front View.jpg"
                                     alt="Interior Design"
                                     fill
                                     className="object-cover hover:scale-110 transition duration-700"

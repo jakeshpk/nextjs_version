@@ -273,7 +273,7 @@ export default function ServicePages({ activeService, onBack, onContactClick }) 
                         {['L1.jpg', 'wash area_L.jpg', 'Living Room_1_R1.jpg', '07.jpg', 'living L1.jpg', 'Upper_Living.jpg'].map((img, i) => (
                             <div key={i} className="relative h-64 rounded-2xl overflow-hidden shadow-lg">
                                 <Image
-                                    src={`/images/${img}`}
+                                    src={`/images/projects/${img}`}
                                     alt={`Work ${i + 1}`}
                                     fill
                                     className="object-cover hover:scale-105 transition duration-500"
