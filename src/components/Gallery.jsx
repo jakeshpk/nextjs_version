@@ -26,7 +26,7 @@ export default function Gallery() {
             alt: "Elegant wash area and utility room design with modern plumbing solutions Kunnamkulam"
         },
         {
-            file: "kitchen 2.jpg",
+            file: "kitchen 2.png",
             title: "Kitchen",
             type: "Interior",
             alt: "Elegant Kitchen Area design with modern accessorires and solutions Kunnamkulam"
