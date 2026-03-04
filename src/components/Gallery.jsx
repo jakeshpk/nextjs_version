@@ -54,6 +54,12 @@ export default function Gallery() {
             title: "Upper Living",
             type: "Interior",
             alt: "Upper floor living space 3D render with modern interior design Thrissur Kerala"
+        },
+        {
+            file: "Electrical Panel Installaion.jpg",
+            title: "Electrical Panel Installation",
+            type: "Electrical",
+            alt: "Professional electrical panel installation work by V4 Building Solutions Thrissur Kerala"
         }
     ];
 
