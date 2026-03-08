@@ -26,7 +26,7 @@ const projects = [
             'ATS-generator integration for automatic power transfer',
         ],
         image: '/images/projects/Electrical Panel Installaion.jpg',
-        completedDate: '',
+        completedDate: 'January 2025',
     },
     {
         id: 'rahul-ajith-kumar-renovation',
@@ -44,7 +44,7 @@ const projects = [
             'Pressure pump system integration',
         ],
         image: '/images/projects/Rahul Ajithkumar.jpeg',
-        completedDate: '',
+        completedDate: 'February 2026',
     },
 ];
 
