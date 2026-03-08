@@ -46,21 +46,6 @@ export default function Projects({ onBack, onContactClick }) {
                         A showcase of our engineering excellence — from active installations to successfully delivered projects across Kerala.
                     </p>
 
-                    {/* Stats row */}
-                    <div className="flex gap-8 mt-10">
-                        <div className="text-center">
-                            <span className="block text-3xl font-bold text-white">{projects.length}</span>
-                            <span className="text-xs uppercase tracking-wider text-slate-400">Total</span>
-                        </div>
-                        <div className="text-center">
-                            <span className="block text-3xl font-bold text-emerald-400">{runningCount}</span>
-                            <span className="text-xs uppercase tracking-wider text-slate-400">Running</span>
-                        </div>
-                        <div className="text-center">
-                            <span className="block text-3xl font-bold text-sky-400">{completedCount}</span>
-                            <span className="text-xs uppercase tracking-wider text-slate-400">Completed</span>
-                        </div>
-                    </div>
                 </div>
             </section>
 
@@ -74,14 +59,14 @@ export default function Projects({ onBack, onContactClick }) {
                                 key={tab.key}
                                 onClick={() => setFilter(tab.key)}
                                 className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 ${filter === tab.key
-                                        ? 'bg-slate-900 text-white shadow-lg shadow-slate-900/25'
-                                        : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'
+                                    ? 'bg-slate-900 text-white shadow-lg shadow-slate-900/25'
+                                    : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'
                                     }`}
                             >
                                 {tab.label}
                                 <span className={`ml-2 px-2 py-0.5 rounded-full text-xs ${filter === tab.key
-                                        ? 'bg-white/20 text-white'
-                                        : 'bg-slate-100 text-slate-500'
+                                    ? 'bg-white/20 text-white'
+                                    : 'bg-slate-100 text-slate-500'
                                     }`}>
                                     {tab.count}
                                 </span>
