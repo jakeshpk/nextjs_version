@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Header({ onServiceClick, onHomeClick, onContactClick }) {
+export default function Header({ onServiceClick, onHomeClick, onContactClick, onProjectsClick }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -51,6 +51,9 @@ export default function Header({ onServiceClick, onHomeClick, onContactClick }) 
         <nav className="hidden lg:flex items-center gap-8">
           <button onClick={handleHomeClick} className="text-sm font-medium text-slate-600 hover:text-sky-600 transition">
             Home
+          </button>
+          <button onClick={() => { onProjectsClick(); if (isMobileMenuOpen) toggleMenu(); }} className="text-sm font-medium text-slate-600 hover:text-sky-600 transition">
+            Projects
           </button>
 
           {/* Mega Menu Trigger */}
@@ -167,6 +170,7 @@ export default function Header({ onServiceClick, onHomeClick, onContactClick }) 
       {/* Mobile Menu Overlay */}
       <div className={`lg:hidden fixed inset-0 bg-white/95 backdrop-blur-xl z-40 transform transition-transform duration-300 flex flex-col pt-24 px-8 ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <button onClick={handleHomeClick} className="text-xl text-left font-medium py-4 border-b border-slate-100">Home</button>
+        <button onClick={() => { onProjectsClick(); toggleMenu(); }} className="text-xl text-left font-medium py-4 border-b border-slate-100">Projects</button>
         <div className="py-4 border-b border-slate-100">
           <span className="text-slate-400 text-xs uppercase tracking-wider">Services</span>
           <button onClick={() => handleServiceClick('chartered')} className="block w-full text-left mt-3 text-lg font-bold text-amber-600">

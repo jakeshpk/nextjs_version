@@ -10,17 +10,27 @@ import Footer from '@/components/Footer';
 import ContactModal from '@/components/ContactModal';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ServicePages from '@/components/ServicePages';
+import Projects from '@/components/Projects';
 
 export default function Home() {
     const [activeService, setActiveService] = useState(null);
     const [isContactOpen, setIsContactOpen] = useState(false);
+    const [showProjects, setShowProjects] = useState(false);
 
     const handleServiceClick = (serviceId) => {
         setActiveService(serviceId);
+        setShowProjects(false);
         window.scrollTo(0, 0);
     };
 
     const handleHomeClick = () => {
+        setActiveService(null);
+        setShowProjects(false);
+        window.scrollTo(0, 0);
+    };
+
+    const handleProjectsClick = () => {
+        setShowProjects(true);
         setActiveService(null);
         window.scrollTo(0, 0);
     };
@@ -35,9 +45,15 @@ export default function Home() {
                 onServiceClick={handleServiceClick}
                 onHomeClick={handleHomeClick}
                 onContactClick={handleContactClick}
+                onProjectsClick={handleProjectsClick}
             />
 
-            {activeService ? (
+            {showProjects ? (
+                <Projects
+                    onBack={handleHomeClick}
+                    onContactClick={handleContactClick}
+                />
+            ) : activeService ? (
                 <ServicePages
                     activeService={activeService}
                     onBack={handleHomeClick}
