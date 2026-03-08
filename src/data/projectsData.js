@@ -25,7 +25,7 @@ const projects = [
             '40 kVA generator supply & installation',
             'ATS-generator integration for automatic power transfer',
         ],
-        image: null,
+        image: '/images/projects/Electrical Panel Installaion.jpg',
         completedDate: '',
     },
 ];
