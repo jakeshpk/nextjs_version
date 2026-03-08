@@ -28,6 +28,24 @@ const projects = [
         image: '/images/projects/Electrical Panel Installaion.jpg',
         completedDate: '',
     },
+    {
+        id: 'rahul-ajith-kumar-renovation',
+        name: 'Residential Renovation – Electrical & Plumbing',
+        client: 'Rahul Ajith Kumar',
+        location: 'Kadashamkadavu, Thrissur',
+        status: 'completed',
+        category: 'Electrical and Plumbing',
+        description: 'We carried out the electrical and plumbing works for a single-bedroom unit on the first-floor level as part of a residential renovation project in Kadashamkadavu, Thrissur. The scope focused on creating a modern, functional, and well-lit living space while upgrading the plumbing system for improved performance and comfort.\n\nThe electrical installation included profile lighting, ceiling lights, and integrated wardrobe lighting, designed to enhance the interior ambience and provide efficient illumination throughout the room. Special attention was given to toilet lighting, ensuring adequate brightness and a clean, modern look within the bathroom space.\n\nThe plumbing work involved the installation of a concealed cistern system, water closet, and a shower panel, creating a streamlined and space-efficient bathroom setup. To ensure consistent water pressure and reliable water supply, a pressure pump system was also installed and integrated with the plumbing network.\n\nThis renovation project highlights our capability to deliver complete residential electrical and plumbing solutions, combining functionality, modern design, and reliable infrastructure for comfortable everyday living.',
+        scope: [
+            'Profile lighting, ceiling lights & wardrobe lighting',
+            'Toilet lighting installation',
+            'Concealed cistern & water closet installation',
+            'Shower panel setup',
+            'Pressure pump system integration',
+        ],
+        image: '/images/projects/Rahul Ajithkumar.jpeg',
+        completedDate: '',
+    },
 ];
 
 export default projects;
