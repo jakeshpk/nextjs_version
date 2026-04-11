@@ -118,7 +118,7 @@ export default function Footer() {
                 </div>
 
                 <div className="border-t border-white/10 mt-16 pt-8 text-center text-slate-500 text-sm">
-                    © 2025 V4 Building Solutions. All rights reserved.
+                    © 2026 V4 Building Solutions. All rights reserved.
                 </div>
             </div>
         </footer>
