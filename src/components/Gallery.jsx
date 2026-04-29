@@ -60,6 +60,18 @@ export default function Gallery() {
             title: "Electrical Panel Installation",
             type: "Electrical",
             alt: "Professional electrical panel installation work by V4 Building Solutions Thrissur Kerala"
+        },
+        {
+            file: "Bahuleyan DINING1.png",
+            title: "Bahuleyan Dining",
+            type: "Interior",
+            alt: "Bahuleyan residence dining area 3D visualization with staircase and elegant lighting Kerala"
+        },
+        {
+            file: "Joju Travels.png",
+            title: "Joju Travels Office",
+            type: "Commercial",
+            alt: "Joju Travels office interior 3D visualization with world map wall art and reception counter"
         }
     ];
 

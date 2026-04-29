@@ -270,14 +270,33 @@ export default function ServicePages({ activeService, onBack, onContactClick }) 
 
                     <h3 className="text-xl font-bold text-slate-800 mb-6">Gallery Highlight</h3>
                     <div className="grid md:grid-cols-3 gap-6 mb-12">
-                        {['L1.jpg', 'wash area_L.jpg', 'Living Room_1_R1.jpg', '07.jpg', 'living L1.jpg', 'Upper_Living.jpg', 'kitchen 2.png', 'Vyshak Exterior.png', 'mallika ext .jpg', 'THEJUS HOUSE.png', 'jerin 1.png', 'biju living 1.png'].map((img, i) => (
-                            <div key={i} className="relative h-64 rounded-2xl overflow-hidden shadow-lg">
+                        {[
+                            { file: 'Bahuleyan LIVING 4.png', alt: 'Bahuleyan residence living room 3D render with TV unit and modern interiors by V4 Building Solutions' },
+                            { file: 'Bahuleyan DINING1.png', alt: 'Bahuleyan residence dining area 3D visualization with staircase and elegant lighting Kerala' },
+                            { file: 'Bahuleyan KITCHEN11.png', alt: 'Bahuleyan residence modern kitchen 3D render with island counter and green accents Thrissur' },
+                            { file: 'Bahuleyan KID BEDROOM RENDER.png', alt: 'Bahuleyan residence kid bedroom 3D interior design with study area and wardrobe Kerala' },
+                            { file: 'Joju Travels.png', alt: 'Joju Travels office interior 3D visualization with world map wall art and reception counter' },
+                            { file: 'L1.jpg', alt: 'Premium living room interior 3D render by V4 Building Solutions Thrissur' },
+                            { file: 'wash area_L.jpg', alt: 'Modern wash area and utility room design Kunnamkulam Kerala' },
+                            { file: 'Living Room_1_R1.jpg', alt: 'Luxurious living room 3D interior visualization Kerala' },
+                            { file: '07.jpg', alt: 'Stunning 3D exterior architectural visualization Thrissur' },
+                            { file: 'living L1.jpg', alt: 'Spacious living area with premium lighting and finishes Kerala' },
+                            { file: 'Upper_Living.jpg', alt: 'Upper floor living space 3D render Thrissur Kerala' },
+                            { file: 'kitchen 2.png', alt: 'Elegant kitchen area 3D design with modern accessories' },
+                            { file: 'Vyshak Exterior.png', alt: 'Vyshak residence 3D exterior elevation visualization Kerala' },
+                            { file: 'mallika ext .jpg', alt: 'Mallika residence exterior 3D front elevation render' },
+                            { file: 'THEJUS HOUSE.png', alt: 'Thejus house 3D exterior architectural visualization Kerala' },
+                            { file: 'jerin 1.png', alt: 'Jerin residence interior 3D render by V4 Building Solutions' },
+                            { file: 'biju living 1.png', alt: 'Biju residence living room 3D interior visualization Kerala' }
+                        ].map((img, i) => (
+                            <div key={i} className="relative h-64 rounded-2xl overflow-hidden shadow-lg group">
                                 <Image
-                                    src={`/images/projects/${img}`}
-                                    alt={`Work ${i + 1}`}
+                                    src={`/images/projects/${img.file}`}
+                                    alt={img.alt}
                                     fill
-                                    className="object-cover hover:scale-105 transition duration-500"
+                                    className="object-cover group-hover:scale-105 transition duration-500"
                                 />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300" />
                             </div>
                         ))}
                     </div>
