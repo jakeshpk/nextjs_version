@@ -37,7 +37,7 @@ export default function Header({ onServiceClick, onHomeClick, onContactClick, on
         {/* Logo */}
         <button onClick={handleHomeClick} className="flex items-center gap-2 z-50">
           <div className="w-20 h-20 flex items-center justify-center">
-            <Image src="/V4_Logo.jpg" alt="V4 Logo" width={80} height={80} className="logo-icon" />
+            <Image src="/V4_Logo.jpg" alt="V4 Logo" width={80} height={80} priority className="logo-icon" />
           </div>
           <div className="flex flex-col leading-tight">
             <span className="font-bold text-lg tracking-wide text-slate-800">V4 BUILDING SOLUTIONS</span>
@@ -48,20 +48,20 @@ export default function Header({ onServiceClick, onHomeClick, onContactClick, on
         </button>
 
         {/* Desktop Menu */}
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav aria-label="Main navigation" className="hidden lg:flex items-center gap-8">
           <button onClick={handleHomeClick} className="text-sm font-medium text-slate-600 hover:text-sky-600 transition">
             Home
           </button>
           <button onClick={() => { onProjectsClick(); if (isMobileMenuOpen) toggleMenu(); }} className="text-sm font-medium text-slate-600 hover:text-sky-600 transition">
             Projects
           </button>
-
+ 
           {/* Mega Menu Trigger */}
           <div className="group relative">
             <button className="text-sm font-medium text-slate-600 group-hover:text-sky-600 transition flex items-center gap-1 py-4">
               Services <i className="fas fa-chevron-down text-xs opacity-50 group-hover:rotate-180 transition-transform"></i>
             </button>
-
+ 
             {/* Mega Menu Content */}
             <div className="mega-menu absolute top-full right-0 translate-x-1/4 w-[600px] max-w-[90vw] glass-card-strong rounded-2xl p-6 opacity-0 invisible -translate-y-4 transition-all duration-300 shadow-xl mt-2 grid grid-cols-2 gap-6">
               <div>
@@ -155,20 +155,20 @@ export default function Header({ onServiceClick, onHomeClick, onContactClick, on
               </div>
             </div>
           </div>
-
+ 
           <button onClick={onContactClick} className="px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white text-sm font-medium rounded-full transition shadow-lg shadow-slate-900/20">
             Contact Us
           </button>
         </nav>
-
+ 
         {/* Mobile Menu Button */}
         <button onClick={toggleMenu} className="lg:hidden text-slate-800 text-xl">
           <i className="fas fa-bars"></i>
         </button>
       </div>
-
+ 
       {/* Mobile Menu Overlay */}
-      <div className={`lg:hidden fixed inset-0 bg-white/95 backdrop-blur-xl z-40 transform transition-transform duration-300 flex flex-col pt-24 px-8 ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div aria-label="Mobile navigation" aria-hidden={!isMobileMenuOpen} className={`lg:hidden fixed inset-0 bg-white/95 backdrop-blur-xl z-40 transform transition-transform duration-300 flex flex-col pt-24 px-8 ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <button onClick={handleHomeClick} className="text-xl text-left font-medium py-4 border-b border-slate-100">Home</button>
         <button onClick={() => { onProjectsClick(); toggleMenu(); }} className="text-xl text-left font-medium py-4 border-b border-slate-100">Projects</button>
         <div className="py-4 border-b border-slate-100">

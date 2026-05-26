@@ -41,7 +41,8 @@ export default function Hero({ onContactClick, onServiceClick }) {
                 </div>
 
                 {/* Right Stats (Floating Glass Cards) */}
-                <div className="relative h-[400px] lg:h-[600px] w-full hidden lg:block reveal" style={{ animationDelay: '0.5s' }}>
+                <section aria-label="Company achievements" className="relative h-[400px] lg:h-[600px] w-full hidden lg:block reveal" style={{ animationDelay: '0.5s' }}>
+                    <h2 className="sr-only">Why choose V4 Building Solutions</h2>
                     <div className="absolute top-1/4 right-10 w-64 glass-card-strong p-6 rounded-2xl animate-float z-20">
                         <div className="flex justify-between items-start mb-4">
                             <div className="bg-amber-100 p-3 rounded-xl text-amber-600">
@@ -61,10 +62,11 @@ export default function Hero({ onContactClick, onServiceClick }) {
                         <p className="text-xs text-slate-400 mt-2">India</p>
                     </div>
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-sky-400/20 rounded-full blur-3xl"></div>
-                </div>
+                </section>
 
                 {/* Mobile Stats */}
-                <div className="lg:hidden grid grid-cols-2 gap-4">
+                <section aria-label="Company achievements (Mobile)" className="lg:hidden grid grid-cols-2 gap-4">
+                    <h2 className="sr-only">Why choose V4 Building Solutions</h2>
                     <div className="glass-panel p-4 rounded-xl text-center">
                         <h3 className="text-2xl font-bold text-slate-800">98.7%</h3>
                         <p className="text-xs text-slate-500">Success Rate</p>
@@ -73,7 +75,7 @@ export default function Hero({ onContactClick, onServiceClick }) {
                         <h3 className="text-2xl font-bold text-slate-800">50+</h3>
                         <p className="text-xs text-slate-500">Projects Done</p>
                     </div>
-                </div>
+                </section>
             </div>
         </section>
     );

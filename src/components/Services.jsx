@@ -69,10 +69,10 @@ export default function Services({ onServiceClick }) {
     ];
 
     return (
-        <section className="py-20 relative z-10">
+        <section id="services" aria-labelledby="services-heading" className="py-20 relative z-10">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Our Expertise</h2>
+                    <h2 id="services-heading" className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Our Expertise</h2>
                     <p className="text-slate-500 max-w-2xl mx-auto">
                         We provide end-to-end building solutions, covering every stage from conceptual planning and architectural blueprint development to complete on-site execution.
                     </p>
@@ -123,6 +123,7 @@ export default function Services({ onServiceClick }) {
                                     src="/images/projects/Nimal Front View.jpg"
                                     alt="Interior Design"
                                     fill
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                     className="object-cover hover:scale-110 transition duration-700"
                                 />
                             </div>

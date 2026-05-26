@@ -11,6 +11,7 @@ import ContactModal from '@/components/ContactModal';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ServicePages from '@/components/ServicePages';
 import Projects from '@/components/Projects';
+import OpportunityPopup from '@/components/OpportunityPopup';
 
 export default function Home() {
     const [activeService, setActiveService] = useState(null);
@@ -74,6 +75,7 @@ export default function Home() {
             <Footer />
             <ContactModal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
             <WhatsAppButton />
+            <OpportunityPopup />
         </>
     );
 }

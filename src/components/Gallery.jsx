@@ -120,6 +120,10 @@ export default function Gallery() {
                                     src={`/images/projects/${project.file}`}
                                     alt={project.alt}
                                     fill
+                                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                    priority={index < 3}
+                                    loading={index < 3 ? undefined : "lazy"}
+                                    quality={75}
                                     className="object-cover transition duration-700 group-hover/card:scale-110"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition duration-300 flex flex-col justify-end p-6">
