@@ -191,6 +191,13 @@ const localBusinessSchema = {
       reviewBody:
         "V4 Building Solutions provided the 3D design for our home's roof. We had some confusion initially during the execution phase, but Jakesh was fantastic at stepping in, clearing everything up, and guiding us through. Great customer service and solid design work. Highly recommend!",
     },
+    {
+      '@type': 'Review',
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      author: { '@type': 'Person', name: 'Er. Jerin Johnkutty' },
+      reviewBody:
+        "V4 Building Solutions did an amazing job on our landscaping and interior tiling. Their communication was excellent, especially the Er. Jakesh who led the project amazing and the final output was top-notch. Our family is thrilled with the results and would definitely recommend them to others... Highly recommend. Thank you V4.",
+    },
   ],
 };
 

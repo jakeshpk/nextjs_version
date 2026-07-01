@@ -47,6 +47,12 @@ export default function Testimonials() {
             name: "Mr. Lentin Varghese",
             role: "Residence Owner, Kottapady, Guruvayoor",
             initials: "LV"
+        },
+        {
+            quote: "V4 Building Solutions did an amazing job on our landscaping and interior tiling. Their communication was excellent, especially the Er. Jakesh who led the project amazing and the final output was top-notch. Our family is thrilled with the results and would definitely recommend them to others... Highly recommend. Thank you V4.",
+            name: "Er. Jerin Johnkutty",
+            role: "Residence Owner, Marathamkode, Kunnamkulam",
+            initials: "JJ"
         }
     ];
 
