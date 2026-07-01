@@ -287,7 +287,8 @@ export default function ServicePages({ activeService, onBack, onContactClick }) 
                             { file: 'mallika ext .jpg', alt: 'Mallika residence exterior 3D front elevation render' },
                             { file: 'THEJUS HOUSE.png', alt: 'Thejus house 3D exterior architectural visualization Kerala' },
                             { file: 'jerin 1.png', alt: 'Jerin residence interior 3D render by V4 Building Solutions' },
-                            { file: 'biju living 1.png', alt: 'Biju residence living room 3D interior visualization Kerala' }
+                            { file: 'biju living 1.png', alt: 'Biju residence living room 3D interior visualization Kerala' },
+                            { file: 'Biju Marathamcode.png', alt: 'Biju residence modern exterior 3D architectural visualization Marathamcode Kerala' }
                         ].map((img, i) => (
                             <div key={i} className="relative h-64 rounded-2xl overflow-hidden shadow-lg group">
                                 <Image

@@ -72,6 +72,12 @@ export default function Gallery() {
             title: "Joju Travels Office",
             type: "Commercial",
             alt: "Joju Travels office interior 3D visualization with world map wall art and reception counter"
+        },
+        {
+            file: "Biju Marathamcode.png",
+            title: "Biju Exterior",
+            type: "Exterior",
+            alt: "3D exterior architectural visualization of Biju residence in Marathamcode by V4 Building Solutions"
         }
     ];
 
