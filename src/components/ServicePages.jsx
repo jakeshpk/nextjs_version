@@ -263,8 +263,9 @@ export default function ServicePages({ activeService, onBack, onContactClick }) 
                     <div className="glass-panel p-8 rounded-3xl mb-12">
                         <h3 className="text-2xl font-bold text-slate-800 mb-4">Photorealistic Rendering</h3>
                         <p className="text-slate-600 leading-relaxed">
-                            Visualize your dream project before the first brick is laid. We use industry-leading render
-                            engines like V-Ray, Corona, and Lumion to create stunning interior and exterior 3D walkthroughs.
+                            Visualize your dream project before the first brick is laid. We combine industry-leading render
+                            engines like V-Ray, Corona, and Lumion with advanced AI technologies to deliver precise rendering
+                            and photorealistic finishes for stunning interior and exterior 3D walkthroughs.
                         </p>
                     </div>
 
