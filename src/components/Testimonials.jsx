@@ -41,6 +41,12 @@ export default function Testimonials() {
             name: "Mr. Fasil Mohammed",
             role: "Student, Vadakkekkad",
             initials: "FM"
+        },
+        {
+            quote: "V4 Building Solutions provided the 3D design for our home's roof. We had some confusion initially during the execution phase, but Jakesh was fantastic at stepping in, clearing everything up, and guiding us through. Great customer service and solid design work. Highly recommend!",
+            name: "Mr. Lentin Varghese",
+            role: "Residence Owner, Kottapady, Guruvayoor",
+            initials: "LV"
         }
     ];
 
