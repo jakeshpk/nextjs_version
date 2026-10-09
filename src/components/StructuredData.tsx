@@ -70,6 +70,7 @@ const localBusinessSchema = {
     'https://www.facebook.com/profile.php?id=61566564854807',
     'https://www.instagram.com/v4_building_solutions/',
     'https://www.instagram.com/v4bimtraining/',
+    'https://www.youtube.com/@V4Buildingsolutions',
   ],
 
   // Service catalog — each becomes a discoverable service

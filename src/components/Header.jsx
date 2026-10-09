@@ -55,6 +55,9 @@ export default function Header({ onServiceClick, onHomeClick, onContactClick, on
           <button onClick={() => { onProjectsClick(); if (isMobileMenuOpen) toggleMenu(); }} className="text-sm font-medium text-slate-600 hover:text-sky-600 transition">
             Projects
           </button>
+          <Link href="/blog" className="text-sm font-medium text-slate-600 hover:text-sky-600 transition">
+            Blog
+          </Link>
  
           {/* Mega Menu Trigger */}
           <div className="group relative">
@@ -171,6 +174,7 @@ export default function Header({ onServiceClick, onHomeClick, onContactClick, on
       <div aria-label="Mobile navigation" aria-hidden={!isMobileMenuOpen} className={`lg:hidden fixed inset-0 bg-white/95 backdrop-blur-xl z-40 transform transition-transform duration-300 flex flex-col pt-24 px-8 ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <button onClick={handleHomeClick} className="text-xl text-left font-medium py-4 border-b border-slate-100">Home</button>
         <button onClick={() => { onProjectsClick(); toggleMenu(); }} className="text-xl text-left font-medium py-4 border-b border-slate-100">Projects</button>
+        <Link href="/blog" onClick={() => { if (isMobileMenuOpen) toggleMenu(); }} className="text-xl text-left font-medium py-4 border-b border-slate-100 block">Blog</Link>
         <div className="py-4 border-b border-slate-100">
           <span className="text-slate-400 text-xs uppercase tracking-wider">Services</span>
           <button onClick={() => handleServiceClick('chartered')} className="block w-full text-left mt-3 text-lg font-bold text-amber-600">

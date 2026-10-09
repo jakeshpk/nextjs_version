@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer() {
     return (
@@ -85,6 +86,15 @@ export default function Footer() {
                                     >
                                         <i className="fab fa-instagram"></i>
                                     </a>
+                                    <a
+                                        href="https://www.youtube.com/@V4Buildingsolutions"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="YouTube"
+                                        className="social-icon-dark"
+                                    >
+                                        <i className="fab fa-youtube"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -117,8 +127,13 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="border-t border-white/10 mt-16 pt-8 text-center text-slate-500 text-sm">
-                    © 2026 V4 Building Solutions. All rights reserved.
+                <div className="border-t border-white/10 mt-16 pt-8 flex flex-col sm:flex-row items-center justify-between text-slate-500 text-sm gap-4">
+                    <p>© 2026 V4 Building Solutions. All rights reserved.</p>
+                    <div className="flex items-center gap-6">
+                        <Link href="/blog" className="text-slate-400 hover:text-sky-400 transition">
+                            Blog & Articles
+                        </Link>
+                    </div>
                 </div>
             </div>
         </footer>
