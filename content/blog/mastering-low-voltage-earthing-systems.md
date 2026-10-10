@@ -13,7 +13,7 @@ readTime: "12 min read"
 
 # Mastering Low-Voltage Earthing Systems: A Detailed Technical Guide for Engineers and Contractors
 
-![Low-voltage electrical distribution panel and earthing conductors](\public\images\Blog images\earth bar in db.jpg)
+![Low-voltage electrical distribution panel and earthing conductors](/images/Blog images/earth bar in db.jpg)
 
 
 
@@ -176,7 +176,7 @@ The PEN conductor carries both neutral and protective functions in the upstream 
 
 In a TT system, the supply source is earthed, while the consumer's exposed conductive parts are connected to an installation earth electrode. The installation does not rely on a utility-provided metallic protective earth conductor as its primary protective path.
 
-![Earth rod, earthing conductor and inspection chamber installation](\public\images\Blog images\eathpitinstallation.jpg)
+![Earth rod, earthing conductor and inspection chamber installation](/images/Blog images/earthpitinstallation.jpg)
 
 *Figure 1: The earth pit installation*
 
@@ -249,7 +249,7 @@ For example, if \(R_A=100\,\Omega\) and \(I_{\Delta n}=0.03\text{ A}\):
 
 The calculated product is 3 V, below the conventional 50 V limit. This relationship is a coordination criterion; it does not replace verification of disconnection times, electrode performance, bonding, or other protective requirements.
 
-![Residual current circuit breaker in an electrical distribution board](\public\images\Blog images\rcd.png)
+![Residual current circuit breaker in an electrical distribution board](/images/Blog images/rcd.png)
 
 *Figure 2: RCD and RCBO devices are selected and tested as part of a coordinated protective system. Confirm device type and performance for the actual loads.*
 
@@ -261,7 +261,7 @@ An IT system is designed for applications where continuity of supply is importan
 
 The source's live conductors are isolated from Earth or connected through a sufficiently high impedance. Exposed conductive parts are connected to an appropriate protective earthing arrangement.
 
-![Industrial electrical control panel with insulation monitoring equipment](\public\images\Blog images\monitoringpanel.png)
+![Industrial electrical control panel with insulation monitoring equipment](/images/Blog images/monitoringpanel.png)
 
 *Figure 3: Industrial monitoring panel.*
 
@@ -297,100 +297,17 @@ IT systems are used in selected applications where continuity is important and s
 
 ## 6. Comparative Analysis of LV Earthing Systems
 
-The following table summarizes the main engineering differences.
-
-## 6. Comparative Analysis of LV Earthing Systems
-
 The following table summarizes the key differences between TN-C, TN-S, TN-C-S, TT, and IT earthing systems.
 
-<section class="earthing-comparison">
-  <h2>6. Comparative Analysis of LV Earthing Systems</h2>
-
-  <p>
-    The following table summarizes the key differences between
-    TN-C, TN-S, TN-C-S, TT, and IT earthing systems.
-  </p>
-
-  <div class="table-responsive">
-    <table class="earthing-table">
-      <thead>
-        <tr>
-          <th>Parameter</th>
-          <th>TN-C</th>
-          <th>TN-S</th>
-          <th>TN-C-S</th>
-          <th>TT</th>
-          <th>IT</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>Source earthing</th>
-          <td>Direct</td>
-          <td>Direct</td>
-          <td>Direct</td>
-          <td>Direct</td>
-          <td>Isolated or impedance-earthed</td>
-        </tr>
-        <tr>
-          <th>Combined PEN conductor</th>
-          <td>Throughout relevant system</td>
-          <td>No</td>
-          <td>Upstream section</td>
-          <td>No</td>
-          <td>No</td>
-        </tr>
-        <tr>
-          <th>Main fault-current path</th>
-          <td>Predominantly metallic</td>
-          <td>Predominantly metallic</td>
-          <td>Predominantly metallic</td>
-          <td>Includes Earth and electrodes</td>
-          <td>Depends on first- or second-fault condition</td>
-        </tr>
-        <tr>
-          <th>First-fault response</th>
-          <td>Automatic disconnection</td>
-          <td>Automatic disconnection</td>
-          <td>Automatic disconnection</td>
-          <td>Automatic disconnection, commonly using RCDs</td>
-          <td>First fault may be tolerated with monitoring</td>
-        </tr>
-        <tr>
-          <th>Typical protection</th>
-          <td>Overcurrent devices</td>
-          <td>Overcurrent devices and, where required, RCDs</td>
-          <td>Overcurrent devices and, where required, RCDs</td>
-          <td>Commonly RCD-based</td>
-          <td>IMD plus coordinated fault protection</td>
-        </tr>
-        <tr>
-          <th>Main concern</th>
-          <td>Broken PEN and stray currents</td>
-          <td>PE continuity and loop impedance</td>
-          <td>Upstream PEN failure</td>
-          <td>Electrode impedance and RCD coordination</td>
-          <td>First-fault detection and second-fault protection</td>
-        </tr>
-        <tr>
-          <th>Common application</th>
-          <td>Selected distribution networks</td>
-          <td>Commercial and industrial installations</td>
-          <td>Suitable utility-supplied installations</td>
-          <td>Installations with independent earth electrodes</td>
-          <td>Selected continuity-critical systems</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <p class="engineering-note">
-    <strong>Engineering note:</strong>
-    This table provides a general comparison. Actual protection
-    requirements depend on the installation design, protective-device
-    characteristics, and applicable electrical standards.
-  </p>
-</section>
+| Parameter | TN-C | TN-S | TN-C-S | TT | IT |
+|---|---|---|---|---|---|
+| **Source earthing** | Direct | Direct | Direct | Direct | Isolated or impedance-earthed |
+| **Combined PEN conductor** | Throughout relevant system | No | Upstream section | No | No |
+| **Main fault-current path** | Predominantly metallic | Predominantly metallic | Predominantly metallic | Includes Earth and electrodes | Depends on first- or second-fault condition |
+| **First-fault response** | Automatic disconnection | Automatic disconnection | Automatic disconnection | Automatic disconnection, commonly using RCDs | First fault may be tolerated with monitoring |
+| **Typical protection** | Overcurrent devices | Overcurrent devices and, where required, RCDs | Overcurrent devices and, where required, RCDs | Commonly RCD-based | IMD plus coordinated fault protection |
+| **Main concern** | Broken PEN and stray currents | PE continuity and loop impedance | Upstream PEN failure | Electrode impedance and RCD coordination | First-fault detection and second-fault protection |
+| **Common application** | Selected distribution networks | Commercial and industrial installations | Suitable utility-supplied installations | Installations with independent earth electrodes | Selected continuity-critical systems |
 
 **Engineering note:** The table provides a general comparison. Actual protection requirements depend on the installation design, protective-device characteristics, and applicable electrical standards.
 
