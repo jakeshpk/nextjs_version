@@ -89,4 +89,4 @@ Don't build blind. Let V4 Building Solutions bring your design to life through p
 
 ---
 
-*Ready to see your project in 3D? [Contact us](/contact) for a visualization quote.*
+*Ready to see your project in 3D? [Contact us](https://v4bs.in) for a visualization quote.*
