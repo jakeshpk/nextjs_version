@@ -70,4 +70,4 @@ At V4 Building Solutions, we're committed to advancing BIM adoption across Keral
 
 ---
 
-*Interested in BIM training or MEP design services? [Contact us](/contact) to discuss your requirements.*
+*Interested in BIM training or MEP design services? [Contact us](https://www.v4bs.in) to discuss your requirements.*

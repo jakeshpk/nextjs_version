@@ -94,4 +94,4 @@ Don't wait for an accident to act. Schedule your pre-monsoon electrical inspecti
 
 ---
 
-*Need an electrical safety audit? Call us at +91 9746 011 785 or [contact us online](/contact).*
+*Need an electrical safety audit? Call us at +91 9746 011 785 or [Contact us](https://www.v4bs.in).*

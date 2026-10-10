@@ -93,4 +93,4 @@ At V4 Building Solutions, we bring Chartered Engineer expertise to every project
 
 ---
 
-*Have questions about Chartered Engineer services? [Get in touch](/contact) — we're happy to explain how CE certification applies to your specific project.*
+*Have questions about Chartered Engineer services? [Get in touch](https://www.v4bs.in) — we're happy to explain how CE certification applies to your specific project.*

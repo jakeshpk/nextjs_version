@@ -405,7 +405,7 @@ For every project, the objective remains the same: provide effective protection 
 
 V4 Building Solutions supports electrical design, safety assessments, and technical services for building projects in Kerala. Contact our team to discuss your installation requirements and arrange an assessment appropriate to your project.
 
-[Contact V4 Building Solutions](/contact)
+[Contact us](https://www.v4bs.in)
 
 ---
 
