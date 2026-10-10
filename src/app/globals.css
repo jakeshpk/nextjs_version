@@ -367,11 +367,12 @@ body {
 
 .blog-content table {
   width: 100%;
+  display: block;
+  overflow-x: auto;
   border-collapse: separate;
   border-spacing: 0;
   margin: 1.5rem 0;
   border-radius: 12px;
-  overflow: hidden;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
