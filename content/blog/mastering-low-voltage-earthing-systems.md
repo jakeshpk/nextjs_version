@@ -13,9 +13,9 @@ readTime: "12 min read"
 
 # Mastering Low-Voltage Earthing Systems: A Detailed Technical Guide for Engineers and Contractors
 
-![Low-voltage electrical distribution panel and earthing conductors](https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80)
+![Low-voltage electrical distribution panel and earthing conductors](\public\images\Blog images\earth bar in db.jpg)
 
-*Understanding earthing arrangements is essential to safe, reliable low-voltage electrical installations.*
+
 
 ## Introduction
 
@@ -41,9 +41,6 @@ Its primary objectives are:
 
 A critical engineering principle is that an earth electrode alone does not guarantee electrical safety. The complete protective arrangement—including protective conductors, bonding, fault-loop impedance, circuit breakers, and residual current devices—must function as a coordinated system.
 
-![Electrical panel with protective earth bar and grounding conductors](https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80)
-
-*Figure 1: Electrical distribution equipment. In an actual installation, verify protective conductor continuity, terminations, bonding, and protective-device coordination.*
 
 ## 2. Understanding TN, TT, and IT Classification
 
@@ -82,9 +79,6 @@ During a phase-to-earth fault, the intended fault-current path is predominantly 
 
 However, effective protection depends on the measured or calculated earth-fault loop impedance, protective-device characteristics, conductor sizing, and required disconnection time.
 
-![Technical schematic comparing TN-C, TN-S and TN-C-S earthing conductor arrangements](https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80)
-
-*Figure 2: Electrical engineering work. For publication, pair this image with a reviewed schematic that clearly labels L, N, PE and PEN conductors and the TN-C-S separation point.*
 
 ### 3.1 TN-C System: Combined Neutral and Protective Earth
 
@@ -182,9 +176,9 @@ The PEN conductor carries both neutral and protective functions in the upstream 
 
 In a TT system, the supply source is earthed, while the consumer's exposed conductive parts are connected to an installation earth electrode. The installation does not rely on a utility-provided metallic protective earth conductor as its primary protective path.
 
-![Earth rod, earthing conductor and inspection chamber installation](https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80)
+![Earth rod, earthing conductor and inspection chamber installation](\public\images\Blog images\eathpitinstallation.jpg)
 
-*Figure 3: Use a properly sourced photograph or a labelled cross-section showing the earth electrode, inspection chamber, earthing conductor, and surrounding soil.*
+*Figure 1: The earth pit installation*
 
 ### 4.1 Typical Arrangement
 
@@ -255,9 +249,9 @@ For example, if \(R_A=100\,\Omega\) and \(I_{\Delta n}=0.03\text{ A}\):
 
 The calculated product is 3 V, below the conventional 50 V limit. This relationship is a coordination criterion; it does not replace verification of disconnection times, electrode performance, bonding, or other protective requirements.
 
-![Residual current circuit breaker in an electrical distribution board](https://images.unsplash.com/photo-1621905251918-48416bd8575a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80)
+![Residual current circuit breaker in an electrical distribution board](\public\images\Blog images\rcd.png)
 
-*Figure 4: RCD and RCBO devices are selected and tested as part of a coordinated protective system. Confirm device type and performance for the actual loads.*
+*Figure 2: RCD and RCBO devices are selected and tested as part of a coordinated protective system. Confirm device type and performance for the actual loads.*
 
 **Practical application:** TT arrangements are useful where a reliable supply earth is not available to the consumer, including certain rural, temporary, and independent installations.
 
@@ -267,9 +261,9 @@ An IT system is designed for applications where continuity of supply is importan
 
 The source's live conductors are isolated from Earth or connected through a sufficiently high impedance. Exposed conductive parts are connected to an appropriate protective earthing arrangement.
 
-![Industrial electrical control panel with insulation monitoring equipment](https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80)
+![Industrial electrical control panel with insulation monitoring equipment](\public\images\Blog images\monitoringpanel.png)
 
-*Figure 5: An industrial monitoring panel. For a technical explanation, pair this photograph with a schematic of an IT supply and insulation monitoring device (IMD).*
+*Figure 3: Industrial monitoring panel.*
 
 ### 5.1 First-Fault Behaviour
 
@@ -305,15 +299,100 @@ IT systems are used in selected applications where continuity is important and s
 
 The following table summarizes the main engineering differences.
 
-| Parameter | TN-C | TN-S | TN-C-S | TT | IT |
-|---|---|---|---|---|---|
-| Source earthing | Direct | Direct | Direct | Direct | Isolated or impedance-earthed |
-| Combined PEN conductor | Throughout relevant system | No | Upstream section | No | No |
-| Main fault-current path | Predominantly metallic | Predominantly metallic | Predominantly metallic | Includes Earth and electrodes | Depends on first- or second-fault condition |
-| First-fault response | Automatic disconnection | Automatic disconnection | Automatic disconnection | Automatic disconnection, commonly using RCDs | First fault may be tolerated with monitoring |
-| Typical protection | Overcurrent devices | Overcurrent devices and, where required, RCDs | Overcurrent devices and, where required, RCDs | Commonly RCD-based | IMD plus coordinated fault protection |
-| Main concern | Broken PEN and stray currents | PE continuity and loop impedance | Upstream PEN failure | Electrode impedance and RCD coordination | First-fault detection and second-fault protection |
-| Common application | Selected distribution networks | Commercial and industrial installations | Suitable utility-supplied installations | Installations with independent earth electrodes | Selected continuity-critical systems |
+## 6. Comparative Analysis of LV Earthing Systems
+
+The following table summarizes the key differences between TN-C, TN-S, TN-C-S, TT, and IT earthing systems.
+
+<section class="earthing-comparison">
+  <h2>6. Comparative Analysis of LV Earthing Systems</h2>
+
+  <p>
+    The following table summarizes the key differences between
+    TN-C, TN-S, TN-C-S, TT, and IT earthing systems.
+  </p>
+
+  <div class="table-responsive">
+    <table class="earthing-table">
+      <thead>
+        <tr>
+          <th>Parameter</th>
+          <th>TN-C</th>
+          <th>TN-S</th>
+          <th>TN-C-S</th>
+          <th>TT</th>
+          <th>IT</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Source earthing</th>
+          <td>Direct</td>
+          <td>Direct</td>
+          <td>Direct</td>
+          <td>Direct</td>
+          <td>Isolated or impedance-earthed</td>
+        </tr>
+        <tr>
+          <th>Combined PEN conductor</th>
+          <td>Throughout relevant system</td>
+          <td>No</td>
+          <td>Upstream section</td>
+          <td>No</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <th>Main fault-current path</th>
+          <td>Predominantly metallic</td>
+          <td>Predominantly metallic</td>
+          <td>Predominantly metallic</td>
+          <td>Includes Earth and electrodes</td>
+          <td>Depends on first- or second-fault condition</td>
+        </tr>
+        <tr>
+          <th>First-fault response</th>
+          <td>Automatic disconnection</td>
+          <td>Automatic disconnection</td>
+          <td>Automatic disconnection</td>
+          <td>Automatic disconnection, commonly using RCDs</td>
+          <td>First fault may be tolerated with monitoring</td>
+        </tr>
+        <tr>
+          <th>Typical protection</th>
+          <td>Overcurrent devices</td>
+          <td>Overcurrent devices and, where required, RCDs</td>
+          <td>Overcurrent devices and, where required, RCDs</td>
+          <td>Commonly RCD-based</td>
+          <td>IMD plus coordinated fault protection</td>
+        </tr>
+        <tr>
+          <th>Main concern</th>
+          <td>Broken PEN and stray currents</td>
+          <td>PE continuity and loop impedance</td>
+          <td>Upstream PEN failure</td>
+          <td>Electrode impedance and RCD coordination</td>
+          <td>First-fault detection and second-fault protection</td>
+        </tr>
+        <tr>
+          <th>Common application</th>
+          <td>Selected distribution networks</td>
+          <td>Commercial and industrial installations</td>
+          <td>Suitable utility-supplied installations</td>
+          <td>Installations with independent earth electrodes</td>
+          <td>Selected continuity-critical systems</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="engineering-note">
+    <strong>Engineering note:</strong>
+    This table provides a general comparison. Actual protection
+    requirements depend on the installation design, protective-device
+    characteristics, and applicable electrical standards.
+  </p>
+</section>
+
+**Engineering note:** The table provides a general comparison. Actual protection requirements depend on the installation design, protective-device characteristics, and applicable electrical standards.
 
 No earthing arrangement is universally superior. The correct choice depends on the source characteristics, utility requirements, load type, environmental conditions, protection strategy, and applicable standards.
 
