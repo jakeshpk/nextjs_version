@@ -13,7 +13,7 @@ readTime: "12 min read"
 
 # Mastering Low-Voltage Earthing Systems: A Detailed Technical Guide for Engineers and Contractors
 
-![Low-voltage electrical distribution panel and earthing conductors](/images/Blog images/earth bar in db.jpg)
+![Low-voltage electrical distribution panel and earthing conductors](/images/blog-images/earth-bar-in-db.jpg)
 
 
 
@@ -176,7 +176,7 @@ The PEN conductor carries both neutral and protective functions in the upstream 
 
 In a TT system, the supply source is earthed, while the consumer's exposed conductive parts are connected to an installation earth electrode. The installation does not rely on a utility-provided metallic protective earth conductor as its primary protective path.
 
-![Earth rod, earthing conductor and inspection chamber installation](/images/Blog images/earthpitinstallation.jpg)
+![Earth rod, earthing conductor and inspection chamber installation](/images/blog-images/earthpitinstallation.jpg)
 
 *Figure 1: The earth pit installation*
 
@@ -249,7 +249,7 @@ For example, if \(R_A=100\,\Omega\) and \(I_{\Delta n}=0.03\text{ A}\):
 
 The calculated product is 3 V, below the conventional 50 V limit. This relationship is a coordination criterion; it does not replace verification of disconnection times, electrode performance, bonding, or other protective requirements.
 
-![Residual current circuit breaker in an electrical distribution board](/images/Blog images/rcd.png)
+![Residual current circuit breaker in an electrical distribution board](/images/blog-images/rcd.png)
 
 *Figure 2: RCD and RCBO devices are selected and tested as part of a coordinated protective system. Confirm device type and performance for the actual loads.*
 
@@ -261,7 +261,7 @@ An IT system is designed for applications where continuity of supply is importan
 
 The source's live conductors are isolated from Earth or connected through a sufficiently high impedance. Exposed conductive parts are connected to an appropriate protective earthing arrangement.
 
-![Industrial electrical control panel with insulation monitoring equipment](/images/Blog images/monitoringpanel.png)
+![Industrial electrical control panel with insulation monitoring equipment](/images/blog-images/monitoringpanel.png)
 
 *Figure 3: Industrial monitoring panel.*
 
