@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import ViewCounter from '@/components/ViewCounter';
 
 function formatDate(dateString) {
   const date = new Date(dateString);
@@ -53,57 +54,108 @@ function RelatedPostCard({ post }) {
           <h4 className="text-sm font-bold text-slate-800 mt-2 mb-1 group-hover:text-sky-600 transition-colors line-clamp-2 leading-snug">
             {post.title}
           </h4>
-          <span className="text-xs text-slate-400">{formatDate(post.date)}</span>
+          <div className="flex items-center justify-between text-xs text-slate-400 mt-2">
+            <span>{formatDate(post.date)}</span>
+            <span className="flex items-center gap-1">
+              <i className="fas fa-eye text-slate-400"></i>
+              <ViewCounter slug={post.slug} trackView={false} showLabel={false} />
+            </span>
+          </div>
         </div>
       </article>
     </Link>
   );
 }
 
-function ShareButtons({ post }) {
+function ConnectWithUs({ post }) {
   const url = typeof window !== 'undefined' ? window.location.href : `https://www.v4bs.in/blog/${post.slug}`;
   const text = encodeURIComponent(post.title);
   const encodedUrl = encodeURIComponent(url);
 
   return (
-    <div className="flex items-center gap-3">
-      <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">Share</span>
-      <a
-        href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-9 h-9 rounded-full bg-slate-100 hover:bg-sky-500 hover:text-white text-slate-500 flex items-center justify-center transition-all duration-300"
-        aria-label="Share on Facebook"
-      >
-        <i className="fab fa-facebook-f text-sm"></i>
-      </a>
-      <a
-        href={`https://twitter.com/intent/tweet?text=${text}&url=${encodedUrl}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-500 flex items-center justify-center transition-all duration-300"
-        aria-label="Share on X"
-      >
-        <i className="fab fa-x-twitter text-sm"></i>
-      </a>
-      <a
-        href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodedUrl}&title=${text}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-9 h-9 rounded-full bg-slate-100 hover:bg-blue-600 hover:text-white text-slate-500 flex items-center justify-center transition-all duration-300"
-        aria-label="Share on LinkedIn"
-      >
-        <i className="fab fa-linkedin-in text-sm"></i>
-      </a>
-      <a
-        href={`https://api.whatsapp.com/send?text=${text}%20${encodedUrl}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-9 h-9 rounded-full bg-slate-100 hover:bg-emerald-500 hover:text-white text-slate-500 flex items-center justify-center transition-all duration-300"
-        aria-label="Share on WhatsApp"
-      >
-        <i className="fab fa-whatsapp text-sm"></i>
-      </a>
+    <div className="p-6 md:p-8 rounded-2xl bg-slate-900 text-white relative overflow-hidden shadow-xl border border-white/10">
+      <div className="absolute top-0 right-0 w-64 h-64 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div className="relative z-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        <div>
+          <h4 className="font-bold text-lg mb-4 text-sky-400">Connect With Us</h4>
+          <div className="flex space-x-4">
+            <a
+              href="https://www.facebook.com/profile.php?id=61566564854807"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="social-icon-dark"
+            >
+              <i className="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/v4_building_solutions/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="social-icon-dark"
+            >
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/v4bimtraining/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram BIM Training"
+              className="social-icon-dark"
+            >
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/@V4Buildingsolutions"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              className="social-icon-dark"
+            >
+              <i className="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        {/* Share Article */}
+        <div className="pt-4 md:pt-0 md:border-l md:border-white/10 md:pl-6">
+          <span className="text-xs font-semibold uppercase tracking-wider text-slate-400 block mb-3">
+            Share Article
+          </span>
+          <div className="flex items-center gap-3">
+            <a
+              href={`https://api.whatsapp.com/send?text=${text}%20${encodedUrl}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500 hover:text-white border border-emerald-500/30 transition text-sm font-medium"
+              aria-label="Share on WhatsApp"
+            >
+              <i className="fab fa-whatsapp text-base"></i>
+              <span>WhatsApp</span>
+            </a>
+            <a
+              href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-xl bg-white/5 hover:bg-sky-500 hover:text-white text-slate-400 border border-white/10 flex items-center justify-center transition"
+              aria-label="Share on Facebook"
+            >
+              <i className="fab fa-facebook-f text-sm"></i>
+            </a>
+            <a
+              href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodedUrl}&title=${text}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-xl bg-white/5 hover:bg-blue-600 hover:text-white text-slate-400 border border-white/10 flex items-center justify-center transition"
+              aria-label="Share on LinkedIn"
+            >
+              <i className="fab fa-linkedin-in text-sm"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
@@ -156,6 +208,10 @@ export default function BlogPostPage({ post, relatedPosts }) {
               <i className="fas fa-clock"></i>
               {post.readTime}
             </span>
+            <span className="flex items-center gap-1.5">
+              <i className="fas fa-eye text-sky-400"></i>
+              <ViewCounter slug={post.slug} trackView={true} />
+            </span>
           </div>
         </div>
       </section>
@@ -203,9 +259,9 @@ export default function BlogPostPage({ post, relatedPosts }) {
                 </div>
               )}
 
-              {/* Share */}
-              <div className="mt-8 pt-8 border-t border-slate-200 not-prose">
-                <ShareButtons post={post} />
+              {/* Connect With Us & Share */}
+              <div className="mt-10 not-prose">
+                <ConnectWithUs post={post} />
               </div>
             </article>
 

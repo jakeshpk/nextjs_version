@@ -104,7 +104,7 @@ export default function RootLayout({
     <html lang="en-IN" className="scroll-smooth">
       <head>
         <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
           rel="stylesheet"
         />
       </head>

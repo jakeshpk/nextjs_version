@@ -1,8 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import ViewCounter from '@/components/ViewCounter';
 
 function formatDate(dateString) {
   const date = new Date(dateString);
@@ -29,7 +30,7 @@ function CategoryBadge({ category }) {
   );
 }
 
-function FeaturedPost({ post }) {
+function FeaturedPost({ post, views }) {
   return (
     <Link href={`/blog/${post.slug}`} className="block group">
       <article className="glass-card-strong rounded-3xl overflow-hidden hover:translate-y-[-4px] transition-all duration-500">
@@ -78,6 +79,10 @@ function FeaturedPost({ post }) {
                 <i className="fas fa-clock"></i>
                 {post.readTime}
               </span>
+              <span className="flex items-center gap-1.5">
+                <i className="fas fa-eye text-sky-500"></i>
+                <ViewCounter slug={post.slug} initialViews={views} trackView={false} />
+              </span>
             </div>
             <div className="mt-6">
               <span className="inline-flex items-center gap-2 text-sky-600 font-semibold text-sm group-hover:gap-3 transition-all">
@@ -91,7 +96,7 @@ function FeaturedPost({ post }) {
   );
 }
 
-function BlogCard({ post, index }) {
+function BlogCard({ post, index, views }) {
   return (
     <Link href={`/blog/${post.slug}`} className="block group">
       <article
@@ -141,6 +146,10 @@ function BlogCard({ post, index }) {
               <i className="fas fa-calendar-alt"></i>
               {formatDate(post.date)}
             </span>
+            <span className="text-xs text-slate-400 flex items-center gap-1.5">
+              <i className="fas fa-eye text-slate-400"></i>
+              <ViewCounter slug={post.slug} initialViews={views} trackView={false} showLabel={false} />
+            </span>
             <span className="text-sky-600 text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
               Read <i className="fas fa-arrow-right text-xs"></i>
             </span>
@@ -154,6 +163,28 @@ function BlogCard({ post, index }) {
 export default function BlogPage({ posts, categories }) {
   const [activeCategory, setActiveCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
+  const [viewsMap, setViewsMap] = useState({});
+
+  useEffect(() => {
+    let isMounted = true;
+    async function fetchViews() {
+      try {
+        const res = await fetch('/api/views');
+        if (res.ok) {
+          const data = await res.json();
+          if (isMounted && data?.views) {
+            setViewsMap(data.views);
+          }
+        }
+      } catch (err) {
+        console.error('Error fetching blog post views:', err);
+      }
+    }
+    fetchViews();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   const featuredPost = posts.find(p => p.featured);
   const regularPosts = posts.filter(p => !p.featured);
@@ -222,7 +253,7 @@ export default function BlogPage({ posts, categories }) {
       {featuredPost && activeCategory === 'All' && !searchQuery && (
         <section className="py-12 bg-slate-50/80">
           <div className="container mx-auto px-6">
-            <FeaturedPost post={featuredPost} />
+            <FeaturedPost post={featuredPost} views={viewsMap[featuredPost.slug]} />
           </div>
         </section>
       )}
@@ -277,7 +308,7 @@ export default function BlogPage({ posts, categories }) {
           ) : (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredPosts.map((post, index) => (
-                <BlogCard key={post.slug} post={post} index={index} />
+                <BlogCard key={post.slug} post={post} index={index} views={viewsMap[post.slug]} />
               ))}
             </div>
           )}
