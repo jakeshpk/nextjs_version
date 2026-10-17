@@ -1,11 +1,12 @@
 ---
 title: "On-Grid vs Off-Grid Solar Systems: Which Is Best for Your Home?"
-slug: "on-grid-vs-off-grid-solar-system"
+slug: "solar-systems"
 excerpt: "Planning to install solar panels in Kerala? Understand the differences between on-grid and off-grid solar systems, their benefits, costs, and limitations to choose the right solar solution for your home or business."
 date: "2026-10-17"
 author: "V4 Building Solutions"
 category: "Technical"
 tags: ["Solar Energy", "On-Grid Solar", "Off-Grid Solar", "Renewable Energy", "Kerala", "Energy Efficiency"]
+coverImage: "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
 featured: true
 readTime: "6 min read"
 ---
