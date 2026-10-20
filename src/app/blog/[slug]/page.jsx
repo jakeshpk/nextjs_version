@@ -12,12 +12,19 @@ export async function generateMetadata({ params }) {
   const post = await getBlogPostBySlug(slug);
   if (!post) return {};
 
+  const pageTitle = post.metaTitle ? `${post.metaTitle} | V4 Building Solutions Blog` : `${post.title} | V4 Building Solutions Blog`;
+  const pageDescription = post.metaDescription || post.excerpt;
+  const canonicalUrl = post.canonical || `/blog/${post.slug}`;
+
   return {
-    title: `${post.title} | V4 Building Solutions Blog`,
-    description: post.excerpt,
+    title: pageTitle,
+    description: pageDescription,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
-      title: post.title,
-      description: post.excerpt,
+      title: pageTitle,
+      description: pageDescription,
       url: `https://www.v4bs.in/blog/${post.slug}`,
       type: 'article',
       publishedTime: post.date,
@@ -26,8 +33,8 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: 'summary_large_image',
-      title: post.title,
-      description: post.excerpt,
+      title: pageTitle,
+      description: pageDescription,
       images: post.coverImage ? [post.coverImage] : [],
     },
   };

@@ -68,6 +68,9 @@ export async function getBlogPostBySlug(slug) {
     coverImage: data.coverImage || '',
     featured: data.featured || false,
     readTime: data.readTime || '3 min read',
+    metaTitle: data.metaTitle || '',
+    metaDescription: data.metaDescription || '',
+    canonical: data.canonical || '',
     contentHtml,
   };
 }
