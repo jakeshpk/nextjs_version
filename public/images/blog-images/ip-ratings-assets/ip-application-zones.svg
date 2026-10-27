@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="460" viewBox="0 0 1000 460" role="img" aria-label="Application guide for IP ratings across residential and commercial buildings">
+  <defs>
+    <linearGradient id="guideBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="cardGlow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="460" rx="16" fill="url(#guideBg)"/>
+
+  <style>
+    .g-title { font-family: system-ui, -apple-system, sans-serif; font-size: 24px; font-weight: 800; fill: #f8fafc; }
+    .g-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #94a3b8; }
+    .c-badge { font-family: system-ui, -apple-system, sans-serif; font-size: 20px; font-weight: 800; }
+    .c-zone { font-family: system-ui, -apple-system, sans-serif; font-size: 15px; font-weight: 700; fill: #f8fafc; }
+    .c-text { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; fill: #cbd5e1; line-height: 1.5; }
+    .c-label { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+  </style>
+
+  <!-- Header -->
+  <text x="45" y="48" class="g-title">Where to Specify Each IP Rating</text>
+  <text x="45" y="74" class="g-sub">Practical installation zones for lighting fixtures, panels, and accessories</text>
+
+  <!-- Card 1: Indoor Living -->
+  <g transform="translate(45, 105)" filter="url(#cardGlow)">
+    <rect width="210" height="315" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <rect x="0" y="0" width="210" height="6" rx="3" fill="#64748b"/>
+    <rect x="20" y="24" width="84" height="32" rx="6" fill="#334155"/>
+    <text x="62" y="46" text-anchor="middle" class="c-badge" fill="#f8fafc">IP20</text>
+    <text x="20" y="86" class="c-zone">Indoor Dry Areas</text>
+    <text x="20" y="106" class="c-label" fill="#94a3b8">Standard Protection</text>
+    
+    <path d="M 20 120 L 190 120" stroke="#334155" stroke-width="1"/>
+    
+    <text x="20" y="145" class="c-text">• Living rooms &amp; bedrooms</text>
+    <text x="20" y="172" class="c-text">• Office ceiling downlights</text>
+    <text x="20" y="199" class="c-text">• Indoor distribution boards</text>
+    <text x="20" y="226" class="c-text">• Wall switches &amp; sockets</text>
+    
+    <rect x="20" y="260" width="170" height="34" rx="6" fill="#0f172a"/>
+    <text x="105" y="281" text-anchor="middle" class="c-label" fill="#ef4444">Zero water resistance</text>
+  </g>
+
+  <!-- Card 2: Bathroom & Sheltered -->
+  <g transform="translate(280, 105)" filter="url(#cardGlow)">
+    <rect width="210" height="315" rx="12" fill="#1e293b" stroke="#0284c7" stroke-width="1.5"/>
+    <rect x="0" y="0" width="210" height="6" rx="3" fill="#38bdf8"/>
+    <rect x="20" y="24" width="94" height="32" rx="6" fill="#0369a1"/>
+    <text x="67" y="46" text-anchor="middle" class="c-badge" fill="#ffffff">IP44</text>
+    <text x="20" y="86" class="c-zone">Bathrooms &amp; Porch</text>
+    <text x="20" y="106" class="c-label" fill="#38bdf8">Splash Resistant</text>
+    
+    <path d="M 20 120 L 190 120" stroke="#334155" stroke-width="1"/>
+    
+    <text x="20" y="145" class="c-text">• Bathroom mirror vanity</text>
+    <text x="20" y="172" class="c-text">• Covered entryway ceiling</text>
+    <text x="20" y="199" class="c-text">• Balcony soffit downlights</text>
+    <text x="20" y="226" class="c-text">• Bathroom Zone 2 fittings</text>
+    
+    <rect x="20" y="260" width="170" height="34" rx="6" fill="#0f172a"/>
+    <text x="105" y="281" text-anchor="middle" class="c-label" fill="#38bdf8">Splashes from any angle</text>
+  </g>
+
+  <!-- Card 3: Outdoor Weatherproof -->
+  <g transform="translate(515, 105)" filter="url(#cardGlow)">
+    <rect width="210" height="315" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="0" y="0" width="210" height="6" rx="3" fill="#0284c7"/>
+    <rect x="20" y="24" width="115" height="32" rx="6" fill="#0284c7"/>
+    <text x="77" y="46" text-anchor="middle" class="c-badge" fill="#ffffff">IP65 / 66</text>
+    <text x="20" y="86" class="c-zone">Exposed Outdoors</text>
+    <text x="20" y="106" class="c-label" fill="#38bdf8">Heavy Rain &amp; Jets</text>
+    
+    <path d="M 20 120 L 190 120" stroke="#334155" stroke-width="1"/>
+    
+    <text x="20" y="145" class="c-text">• Facade &amp; gate floodlights</text>
+    <text x="20" y="172" class="c-text">• Monsoon-exposed wall lights</text>
+    <text x="20" y="199" class="c-text">• Outdoor feeder pillars / DBs</text>
+    <text x="20" y="226" class="c-text">• Garden pathway bollards</text>
+    
+    <rect x="20" y="260" width="170" height="34" rx="6" fill="#0f172a"/>
+    <text x="105" y="281" text-anchor="middle" class="c-label" fill="#4ade80">Dust-tight + Jet proof</text>
+  </g>
+
+  <!-- Card 4: Submerged / In-Ground -->
+  <g transform="translate(745, 105)" filter="url(#cardGlow)">
+    <rect width="210" height="315" rx="12" fill="#1e293b" stroke="#6366f1" stroke-width="1.5"/>
+    <rect x="0" y="0" width="210" height="6" rx="3" fill="#818cf8"/>
+    <rect x="20" y="24" width="115" height="32" rx="6" fill="#4338ca"/>
+    <text x="77" y="46" text-anchor="middle" class="c-badge" fill="#ffffff">IP67 / 68</text>
+    <text x="20" y="86" class="c-zone">Ground &amp; Water</text>
+    <text x="20" y="106" class="c-label" fill="#818cf8">Submersion Proof</text>
+    
+    <path d="M 20 120 L 190 120" stroke="#334155" stroke-width="1"/>
+    
+    <text x="20" y="145" class="c-text">• In-ground driveway uplights</text>
+    <text x="20" y="172" class="c-text">• Swimming pool luminaires</text>
+    <text x="20" y="199" class="c-text">• Water fountain lighting</text>
+    <text x="20" y="226" class="c-text">• Water tank pump controls</text>
+    
+    <rect x="20" y="260" width="170" height="34" rx="6" fill="#0f172a"/>
+    <text x="105" y="281" text-anchor="middle" class="c-label" fill="#a5b4fc">Continuous immersion*</text>
+  </g>
+</svg>

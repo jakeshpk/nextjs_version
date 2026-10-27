@@ -9,6 +9,8 @@ author: "V4 Building Solutions"
 category: "Technical"
 tags: ["IP Ratings", "Electrical Safety", "Lighting", "Panel Boards", "Electrical Design", "Kerala"]
 featured: false
+coverImage: "/images/blog-images/ip-ratings-assets/ip-ratings-cover.jpg"
+canonical: "/blog/ip-ratings-electrical-fixtures-light-fittings-panel-boards"
 readTime: "15 min read"
 ---
 
@@ -34,6 +36,8 @@ IP ratings appear on equipment including:
 The rating applies to the enclosure in its specified configuration. Covers, seals, mounting orientation and cable connections can all form part of that configuration.
 
 ## How to Read an IP Rating
+
+![Anatomy of an Ingress Protection IP code showing solids and liquids digit breakdown](/images/blog-images/ip-ratings-assets/ip-code-anatomy.svg)
 
 A typical IP code contains the letters **IP** followed by two digits. Read the digits separately.
 
@@ -90,6 +94,8 @@ You may also see additional letters. For example, the **B** in **IPXXB** identif
 
 ## Common IP Ratings for Electrical Equipment
 
+![Common IP ratings comparison for electrical fixtures, lights, and distribution panels](/images/blog-images/ip-ratings-assets/ip-ratings-matrix.svg)
+
 The following combinations frequently appear in lighting and enclosure specifications:
 
 | Rating | Meaning in brief | Main limitation to recognise |
@@ -128,6 +134,8 @@ IP67 addresses temporary immersion. IP68 addresses continuous immersion under sp
 IEC 60529 uses the water designation **9**. The **9K** designation belongs to the road-vehicle protection framework in **ISO 20653**, with historical roots in DIN 40050-9. If a product is marketed as IP69K, check which standard and test are declared. [Source: ISO 20653](https://www.iso.org/obp/ui?_escaped_fragment_=iso:std:iso:20653:ed-3:v1:en).
 
 ## Choosing IP Ratings for Light Fittings
+
+![Building zones guide for selecting IP ratings for indoor, bathroom, outdoor and submersible lighting](/images/blog-images/ip-ratings-assets/ip-application-zones.svg)
 
 Lighting selection starts with the fitting’s exact position and the water or dust likely to reach it.
 
@@ -183,6 +191,8 @@ The table below gives **illustrative starting points for design discussions**, b
 Where floodwater is foreseeable, consider relocating or raising the equipment as part of the design. An immersion marking alone does not establish that an ordinary distribution board is suitable for continued operation during flooding.
 
 ### The Finished Panel Must Maintain the Declared Rating
+
+![Weatherproof outdoor electrical distribution panel showing door perimeter rubber gasket seals and compression cable glands](/images/blog-images/ip-ratings-assets/ip-enclosure-gland-seals.jpg)
 
 An empty IP65 enclosure does not automatically produce an IP65 completed panel. Door-mounted meters, switches, ventilation devices, gland plates and cable entries must preserve the required protection.
 
