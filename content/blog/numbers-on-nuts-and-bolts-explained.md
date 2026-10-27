@@ -217,4 +217,4 @@ The next time you pick up a bolt, take a moment to inspect its head. Those tiny 
 
 ---
 
-*At V4 Building Solutions, we promote practical engineering knowledge, quality construction practices, and technical awareness. For professional engineering, building design, and electrical services, [contact our team](https://www.v4bs.in/#contact).*
+*At V4 Building Solutions, we promote practical engineering knowledge, quality construction practices, and technical awareness. For professional engineering, building design, and electrical services, [contact our team](https://www.v4bs.in/).*
