@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">Plan your electrical points before plastering</title>
+<desc id="desc">Editorial illustration of a room with lighting, appliance, socket and data planning callouts. Not an installation drawing.</desc>
+<rect width="1200" height="630" fill="#102b31"/>
+<g font-family="Arial, sans-serif">
+<text x="64" y="62" fill="#7fdfc4" font-size="18" letter-spacing="3">V4 BUILDING SOLUTIONS / HOME PLANNING</text>
+<text x="64" y="130" fill="#fff" font-size="46" font-weight="700">Before the walls are finished,</text>
+<text x="64" y="188" fill="#fff" font-size="46" font-weight="700">plan how you will live.</text>
+<rect x="64" y="229" width="702" height="319" rx="16" fill="#f0f4ec"/>
+<path d="M100 496V267H727V496Z" fill="#e1e8de" stroke="#728c86" stroke-width="3"/>
+<path d="M100 496H727" stroke="#728c86" stroke-width="3"/>
+<rect x="145" y="391" width="224" height="81" rx="12" fill="#407c77"/><rect x="161" y="370" width="85" height="62" rx="12" fill="#60958b"/><rect x="255" y="370" width="96" height="62" rx="12" fill="#60958b"/>
+<rect x="535" y="333" width="137" height="82" rx="5" fill="#183d44"/><rect x="520" y="430" width="165" height="50" rx="4" fill="#c89c69"/>
+<path d="M407 268V301" stroke="#42635f" stroke-width="4"/><path d="M373 326L391 301H423L441 326Z" fill="#dba64e"/>
+<rect x="454" y="438" width="28" height="34" rx="3" fill="#fff" stroke="#64817a" stroke-width="2"/><circle cx="463" cy="450" r="2" fill="#183d44"/><circle cx="473" cy="450" r="2" fill="#183d44"/>
+<g fill="#deaa51" stroke="#102b31" stroke-width="3"><circle cx="407" cy="341" r="17"/><circle cx="675" cy="323" r="17"/><circle cx="469" cy="489" r="17"/><circle cx="606" cy="446" r="17"/></g>
+<g fill="#102b31" font-size="18" font-weight="700" text-anchor="middle"><text x="407" y="347">1</text><text x="675" y="329">2</text><text x="469" y="495">3</text><text x="606" y="452">4</text></g>
+<g fill="#fff" font-size="23" font-weight="700"><text x="808" y="284">01  Lights + fans</text><text x="808" y="358">02  Appliances</text><text x="808" y="432">03  Usable sockets</text><text x="808" y="506">04  Internet + data</text></g>
+<text x="808" y="312" fill="#bdd2cb" font-size="16">Match the ceiling layout</text><text x="808" y="386" fill="#bdd2cb" font-size="16">Confirm actual equipment</text><text x="808" y="460" fill="#bdd2cb" font-size="16">Check furniture positions</text><text x="808" y="534" fill="#bdd2cb" font-size="16">Coordinate separate routes</text>
+<text x="64" y="592" fill="#bdd2cb" font-size="16">HOMEOWNER PLANNING GUIDE • Illustrative only; not an installation drawing.</text>
+</g></svg>
