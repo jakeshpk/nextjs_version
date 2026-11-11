@@ -8,6 +8,12 @@ export default function Gallery() {
 
     const projects = [
         {
+            file: "shifana-palakkad.png",
+            title: "Shifana Palakkad",
+            type: "Exterior",
+            alt: "Exterior architectural visualization of Shifana residence in Palakkad by V4 Building Solutions"
+        },
+        {
             file: "L1.jpg",
             title: "Living Detail",
             type: "Interior",

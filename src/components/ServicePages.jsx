@@ -1,6 +1,10 @@
 'use client';
 
 import Image from 'next/image';
+import ArchitecturalVisualization from './ArchitecturalVisualization';
+import BimTraining from './BimTraining';
+import ElectricalServices from './ElectricalServices';
+import ItSolutions from './ItSolutions';
 
 export default function ServicePages({ activeService, onBack, onContactClick }) {
     if (!activeService) return null;
@@ -54,47 +58,6 @@ export default function ServicePages({ activeService, onBack, onContactClick }) 
                 </div>
             )
         },
-        electrical: {
-            title: 'Electrical Contracting',
-            subtitle: 'Class B Licensed (150kW)',
-            headerClass: 'service-header-electrical',
-            icon: 'fa-bolt',
-            iconBg: 'bg-yellow-500',
-            content: (
-                <div className="container mx-auto px-6 py-12 grid md:grid-cols-3 gap-12">
-                    <div className="md:col-span-2 space-y-8">
-                        <div className="glass-panel p-8 rounded-3xl">
-                            <h3 className="text-2xl font-bold text-slate-800 mb-4">Comprehensive Electrical Solutions</h3>
-                            <p className="text-slate-600 leading-relaxed mb-6">
-                                At V4 Building Solutions, we specialize in high-capacity electrical infrastructure for
-                                commercial and residential complexes. Holding a KSEB Class B license, we are authorized to
-                                handle projects up to 150kW.
-                            </p>
-                            <div className="grid sm:grid-cols-2 gap-4">
-                                {['Load Calculation', 'Electrical Designing', 'Safety Audits', 'Cabling & Networking'].map((item, i) => (
-                                    <div key={i} className="flex items-start gap-3">
-                                        <i className="fas fa-check-circle text-yellow-500 mt-1"></i>
-                                        <div>
-                                            <h4 className="font-semibold">{item}</h4>
-                                            <p className="text-xs text-slate-500">Professional execution</p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                    <div className="space-y-6">
-                        <div className="bg-slate-900 text-white p-8 rounded-3xl">
-                            <h4 className="text-xl font-bold mb-2">Need an Estimate?</h4>
-                            <p className="text-sm text-slate-400 mb-6">Get a detailed quote for your electrical requirements.</p>
-                            <button onClick={onContactClick} className="block w-full text-center py-3 bg-yellow-500 text-slate-900 font-bold rounded-xl hover:bg-yellow-400 transition">
-                                Contact Us
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            )
-        },
         plumbing: {
             title: 'Plumbing Solutions',
             subtitle: 'Design & Execution',
@@ -128,43 +91,6 @@ export default function ServicePages({ activeService, onBack, onContactClick }) 
                             <p className="text-sm text-slate-400 mb-6">Discuss your plumbing layout with our experts.</p>
                             <button onClick={onContactClick} className="block w-full text-center py-3 bg-blue-500 text-white font-bold rounded-xl hover:bg-blue-400 transition">
                                 Contact Us
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            )
-        },
-        bim: {
-            title: 'BIM & Training',
-            subtitle: 'Compliance & Education',
-            headerClass: 'service-header-bim',
-            icon: 'fa-cube',
-            iconBg: 'bg-indigo-500',
-            content: (
-                <div className="container mx-auto px-6 py-12 grid md:grid-cols-3 gap-12">
-                    <div className="md:col-span-2 space-y-8">
-                        <div className="glass-panel p-8 rounded-3xl">
-                            <h3 className="text-2xl font-bold text-slate-800 mb-4">Building Information Modeling</h3>
-                            <p className="text-slate-600 leading-relaxed mb-6">
-                                V4 BIM Training provides top-tier BIM compliance services ensuring your projects meet
-                                international standards. We offer specialized training programs in leading construction software.
-                            </p>
-                            <h4 className="font-bold text-lg text-slate-800 mb-4">Software Stack</h4>
-                            <div className="flex flex-wrap gap-3">
-                                {['AutoCAD', 'Revit MEP', 'Navisworks', 'Primavera', 'SketchUp', '3ds Max', 'Lumion', 'V-Ray', 'Corona'].map((sw, i) => (
-                                    <span key={i} className="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-slate-600">
-                                        {sw}
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                    <div className="space-y-6">
-                        <div className="bg-slate-900 text-white p-8 rounded-3xl">
-                            <h4 className="text-xl font-bold mb-2">Join Training</h4>
-                            <p className="text-sm text-slate-400 mb-6">Enroll in our certified BIM training courses.</p>
-                            <button onClick={onContactClick} className="block w-full text-center py-3 bg-indigo-500 text-white font-bold rounded-xl hover:bg-indigo-400 transition">
-                                Enroll Now
                             </button>
                         </div>
                     </div>
@@ -208,124 +134,6 @@ export default function ServicePages({ activeService, onBack, onContactClick }) 
                             </button>
                         </div>
                     </div>
-                </div>
-            )
-        },
-        it: {
-            title: 'IT Solutions',
-            subtitle: 'Development & Training',
-            headerClass: 'service-header-it',
-            icon: 'fa-laptop-code',
-            iconBg: 'bg-emerald-500',
-            content: (
-                <div className="container mx-auto px-6 py-12 grid md:grid-cols-3 gap-12">
-                    <div className="md:col-span-2 space-y-8">
-                        <div className="glass-panel p-8 rounded-3xl">
-                            <h3 className="text-2xl font-bold text-slate-800 mb-4">Digital Transformation</h3>
-                            <p className="text-slate-600 leading-relaxed mb-6">
-                                We bridge the gap between traditional engineering and modern technology. Our IT wing focuses
-                                on business automation and developer training.
-                            </p>
-                            <div className="grid gap-4">
-                                {[
-                                    { title: 'Google AppSheet Development', desc: 'Custom no-code apps for inventory and reporting' },
-                                    { title: 'Static Web Development', desc: 'Fast, secure portfolios for construction firms' },
-                                    { title: 'Python Training', desc: 'From basics to automation scripts for engineers' }
-                                ].map((item, i) => (
-                                    <div key={i} className="p-4 border-l-4 border-emerald-500 bg-white/50 rounded-r-xl">
-                                        <h4 className="font-bold text-emerald-700">{item.title}</h4>
-                                        <p className="text-sm text-slate-600">{item.desc}</p>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                    <div className="space-y-6">
-                        <div className="bg-slate-900 text-white p-8 rounded-3xl">
-                            <h4 className="text-xl font-bold mb-2">Build Your App</h4>
-                            <p className="text-sm text-slate-400 mb-6">Automate your workflow with AppSheet.</p>
-                            <button onClick={onContactClick} className="block w-full text-center py-3 bg-emerald-500 text-white font-bold rounded-xl hover:bg-emerald-400 transition">
-                                Contact Us
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            )
-        },
-        visualization: {
-            title: 'Architectural Viz',
-            subtitle: '3D Modeling & Rendering',
-            headerClass: 'service-header-viz',
-            icon: 'fa-vr-cardboard',
-            iconBg: 'bg-rose-500',
-            content: (
-                <div className="container mx-auto px-6 py-12">
-                    <div className="glass-panel p-8 rounded-3xl mb-12">
-                        <h3 className="text-2xl font-bold text-slate-800 mb-4">Photorealistic Rendering</h3>
-                        <p className="text-slate-600 leading-relaxed">
-                            Visualize your dream project before the first brick is laid. We combine industry-leading render
-                            engines like V-Ray, Corona, and Lumion with advanced AI technologies to deliver precise rendering
-                            and photorealistic finishes for stunning interior and exterior 3D walkthroughs.
-                        </p>
-                    </div>
-
-                    <h3 className="text-xl font-bold text-slate-800 mb-6">Gallery Highlight</h3>
-                    <div className="grid md:grid-cols-3 gap-6 mb-12">
-                        {[
-                            { file: 'Bahuleyan LIVING 4.png', alt: 'Bahuleyan residence living room 3D render with TV unit and modern interiors by V4 Building Solutions' },
-                            { file: 'Bahuleyan DINING1.png', alt: 'Bahuleyan residence dining area 3D visualization with staircase and elegant lighting Kerala' },
-                            { file: 'Bahuleyan KITCHEN11.png', alt: 'Bahuleyan residence modern kitchen 3D render with island counter and green accents Thrissur' },
-                            { file: 'Bahuleyan KID BEDROOM RENDER.png', alt: 'Bahuleyan residence kid bedroom 3D interior design with study area and wardrobe Kerala' },
-                            { file: 'Joju Travels.png', alt: 'Joju Travels office interior 3D visualization with world map wall art and reception counter' },
-                            { file: 'L1.jpg', alt: 'Premium living room interior 3D render by V4 Building Solutions Thrissur' },
-                            { file: 'wash area_L.jpg', alt: 'Modern wash area and utility room design Kunnamkulam Kerala' },
-                            { file: 'Living Room_1_R1.jpg', alt: 'Luxurious living room 3D interior visualization Kerala' },
-                            { file: '07.jpg', alt: 'Stunning 3D exterior architectural visualization Thrissur' },
-                            { file: 'living L1.jpg', alt: 'Spacious living area with premium lighting and finishes Kerala' },
-                            { file: 'Upper_Living.jpg', alt: 'Upper floor living space 3D render Thrissur Kerala' },
-                            { file: 'kitchen 2.png', alt: 'Elegant kitchen area 3D design with modern accessories' },
-                            { file: 'Vyshak Exterior.png', alt: 'Vyshak residence 3D exterior elevation visualization Kerala' },
-                            { file: 'mallika ext .jpg', alt: 'Mallika residence exterior 3D front elevation render' },
-                            { file: 'THEJUS HOUSE.png', alt: 'Thejus house 3D exterior architectural visualization Kerala' },
-                            { file: 'jerin 1.png', alt: 'Jerin residence interior 3D render by V4 Building Solutions' },
-                            { file: 'biju living 1.png', alt: 'Biju residence living room 3D interior visualization Kerala' },
-                            { file: 'Biju Marathamcode.png', alt: 'Biju residence modern exterior 3D architectural visualization Marathamcode Kerala' }
-                        ].map((img, i) => (
-                            <div key={i} className="relative h-64 rounded-2xl overflow-hidden shadow-lg group">
-                                <Image
-                                    src={`/images/projects/${img.file}`}
-                                    alt={img.alt}
-                                    fill
-                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                    className="object-cover group-hover:scale-105 transition duration-500"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300" />
-                            </div>
-                        ))}
-                    </div>
-
-                    <section className="py-10">
-                        <div className="text-center mb-10">
-                            <h2 className="text-3xl font-bold text-slate-800 mb-4">Virtual Tour</h2>
-                            <p className="text-slate-500">Experience our finished projects in 360° VR.</p>
-                        </div>
-                        <div className="glass-panel p-4 rounded-3xl overflow-hidden shadow-2xl border border-white/50 relative">
-                            <iframe
-                                src="https://momento360.com/e/u/14116185ac8f4341b73dee39d4cf12a5?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true"
-                                width="100%"
-                                height="500px"
-                                frameBorder="0"
-                                className="relative z-10 rounded-2xl w-full h-[400px] md:h-[600px] shadow-inner"
-                                allowFullScreen
-                                allow="accelerometer; magnetometer; gyroscope"
-                            ></iframe>
-                            <div className="absolute bottom-6 right-6 z-20 pointer-events-none">
-                                <span className="bg-black/50 backdrop-blur text-white text-xs px-3 py-1 rounded-full border border-white/20">
-                                    <i className="fas fa-vr-cardboard mr-1"></i> Interactive View
-                                </span>
-                            </div>
-                        </div>
-                    </section>
                 </div>
             )
         },
@@ -377,6 +185,14 @@ export default function ServicePages({ activeService, onBack, onContactClick }) 
             )
         }
     };
+
+    if (activeService === 'visualization') return <ArchitecturalVisualization onBack={onBack} onContactClick={onContactClick} />;
+
+    if (activeService === 'bim') return <BimTraining onBack={onBack} onContactClick={onContactClick} />;
+
+    if (activeService === 'electrical') return <ElectricalServices onBack={onBack} onContactClick={onContactClick} />;
+
+    if (activeService === 'it') return <ItSolutions onBack={onBack} onContactClick={onContactClick} />;
 
     const service = services[activeService];
     if (!service) return null;

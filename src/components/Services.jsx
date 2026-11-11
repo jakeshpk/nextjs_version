@@ -18,7 +18,7 @@ export default function Services({ onServiceClick }) {
         },
         {
             id: 'electrical',
-            title: 'Electrical Contracting',
+            title: 'Electrical Contracting & Design Consultancy',
             description: 'Licensed KSEB Class B (150kW) contractors. Complete electrical system design, load calculation, and installation.',
             icon: 'fa-bolt',
             gradient: 'from-yellow-400 to-orange-500',
