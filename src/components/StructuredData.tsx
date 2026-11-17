@@ -153,53 +153,8 @@ const localBusinessSchema = {
     ],
   },
 
-  // Real testimonials from the site, structured as Review objects.
-  // NOTE: aggregateRating intentionally omitted — Google requires verifiable
-  // ratings. Add it once you have Google Business Profile reviews.
-  review: [
-    {
-      '@type': 'Review',
-      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-      author: { '@type': 'Person', name: 'Mohammed Hashim' },
-      reviewBody:
-        'V4 delivered the 150KW electrical contract ahead of schedule and with zero issues. Their attention to KSEB compliance was excellent — a true professional firm.',
-    },
-    {
-      '@type': 'Review',
-      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-      author: { '@type': 'Person', name: 'Ar. Jack C' },
-      reviewBody:
-        'The BIM training was top-notch. Our team is now fully proficient in Revit and Navisworks, significantly improving our project efficiency.',
-    },
-    {
-      '@type': 'Review',
-      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-      author: { '@type': 'Person', name: 'Nithin P.D' },
-      reviewBody:
-        'V4 Building Solutions is synonymous with trust. Their execution in both electrical and plumbing domains has always been flawless.',
-    },
-    {
-      '@type': 'Review',
-      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-      author: { '@type': 'Person', name: 'Dincy Anoop' },
-      reviewBody:
-        'The 3D architectural visualizations for our new residence were breathtaking and instrumental in helping us complete construction quickly.',
-    },
-    {
-      '@type': 'Review',
-      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-      author: { '@type': 'Person', name: 'Lentin Varghese' },
-      reviewBody:
-        "V4 Building Solutions provided the 3D design for our home's roof. We had some confusion initially during the execution phase, but Jakesh was fantastic at stepping in, clearing everything up, and guiding us through. Great customer service and solid design work. Highly recommend!",
-    },
-    {
-      '@type': 'Review',
-      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-      author: { '@type': 'Person', name: 'Er. Jerin Johnkutty' },
-      reviewBody:
-        "V4 Building Solutions did an amazing job on our landscaping and interior tiling. Their communication was excellent, especially the Er. Jakesh who led the project amazing and the final output was top-notch. Our family is thrilled with the results and would definitely recommend them to others... Highly recommend. Thank you V4.",
-    },
-  ],
+  // Client reviews are displayed on the page; no aggregate rating is inferred.
+
 };
 
 // ----------------------------------------------------------------------------
