@@ -10,6 +10,7 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 import ServicePages from '@/components/ServicePages';
 import Projects from '@/components/Projects';
 import OpportunityPopup from '@/components/OpportunityPopup';
+import WebsiteHeader from './WebsiteHeader';
 import './WebsiteHome.css';
 
 const priorities = [
@@ -27,16 +28,18 @@ const supporting = [
 export default function WebsiteHome({ initialView = null, preview = false }) {
  const [view, setView] = useState(initialView);
  const [contact, setContact] = useState(false);
- const [menu, setMenu] = useState(false);
- function navigate(id) { setView(id); setMenu(false); window.scrollTo({ top: 0 }); }
+ function navigate(id) { setView(id); window.scrollTo({ top: 0 }); }
  return <div className="v4-preview">
   {preview && <div className="pv-review">DESIGN PREVIEW <span>V4 Building Solutions</span><Link href="/">View main website ↗</Link></div>}
-  <header className="pv-header">
-   <button className="pv-brand" onClick={() => navigate(null)} aria-label="V4 Building Solutions home"><Image src="/V4_Logo.jpg" alt="V4 Logo" width={52} height={52} /><span>V4 BUILDING SOLUTIONS<small>KSEB Class B Licensed | Chartered Engineer (Electrical)</small></span></button>
-   <nav aria-label="Main navigation"><button onClick={() => navigate(null)}>Home</button><button onClick={() => navigate('projects')}>Projects</button><Link href="/blog">Blog</Link><button onClick={() => { navigate(null); setTimeout(() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' }), 50); }}>Services</button><button className="pv-button pv-dark" onClick={() => setContact(true)}>Contact Us <span>↗</span></button></nav>
-   <button className="pv-menu-toggle" aria-expanded={menu} aria-controls="pv-mobile-nav" onClick={() => setMenu(!menu)}>{menu ? 'Close ✕' : 'Menu ☰'}</button>
-  </header>
-  {menu && <nav id="pv-mobile-nav" className="pv-mobile-nav" aria-label="Mobile navigation"><button onClick={() => navigate(null)}>Home</button><button onClick={() => navigate('projects')}>Projects</button><Link href="/blog">Blog</Link>{priorities.map(p => <button key={p.id} onClick={() => navigate(p.id)}>{p.label}</button>)}<button onClick={() => { setContact(true); setMenu(false); }}>Contact Us</button></nav>}
+  <WebsiteHeader
+   onNavigate={navigate}
+   onServices={() => {
+    navigate(null);
+    setTimeout(() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' }), 50);
+   }}
+   onContact={() => setContact(true)}
+   mobileServices={priorities}
+  />
   {view ? <div className="pv-detail">{view === 'projects' ? <Projects onBack={() => navigate(null)} onContactClick={() => setContact(true)} /> : <ServicePages activeService={view} onBack={() => navigate(null)} onContactClick={() => setContact(true)} />}</div> : <main>
    <section className="pv-hero">
     <div className="pv-hero-copy"><p className="pv-eyebrow"><span /> India & Middle East Experts</p><p className="pv-hero-focus">ELECTRICAL CONTRACTING & DESIGN CONSULTANCY</p><h1>Engineering<br /><em>Perfection.</em></h1><p className="pv-intro">Chartered Engineer (Electrical) & Licensed KSEB Class B Contractors delivering premium Electrical, Plumbing, and BIM solutions with a 98.7% success rate across 50+ certified projects.</p><div className="pv-actions"><button className="pv-button pv-lime" onClick={() => setContact(true)}>Get a Quote <span>↗</span></button><button className="pv-text-link" onClick={() => navigate('projects')}>View Work <span>↗</span></button></div><button className="pv-credential" onClick={() => navigate('chartered')}><span className="pv-seal">✧</span><span>Chartered Engineer (Electrical)<small>Institution of Engineers (India) · Govt Recognized</small></span><span>↗</span></button></div>
@@ -54,4 +57,3 @@ export default function WebsiteHome({ initialView = null, preview = false }) {
   <Footer /><ContactModal isOpen={contact} onClose={() => setContact(false)} /><WhatsAppButton /><OpportunityPopup />
  </div>;
 }
-

@@ -1,0 +1,18 @@
+.page {
+ display: flex;
+ flex-direction: column;
+ height: 100dvh;
+}
+
+.content {
+ display: flex;
+ flex: 1;
+ min-height: 0;
+}
+
+.frame {
+ flex: 1;
+ min-width: 0;
+ width: 100%;
+ border: 0;
+}

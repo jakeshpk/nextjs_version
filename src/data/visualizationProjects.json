@@ -6,6 +6,15 @@
     "category": "Exterior"
   },
   {
+    "file": "mohandas-akamala-plaza.png",
+    "alt": "Exterior rendering of the Mohandas Akamala commercial plaza, with wood cladding, oval windows, and glazed storefronts",
+    "title": "Mohandas Akamala Commercial Building",
+    "category": "Commercial",
+    "additionalCategories": [
+      "Exterior"
+    ]
+  },
+  {
     "file": "ummer-kottol-living-room.png",
     "alt": "Ummer Kottol living room architectural visualization with double-height curtains, pendant lighting, and contemporary seating by V4 Building Solutions",
     "title": "Ummer Kottol Living room",

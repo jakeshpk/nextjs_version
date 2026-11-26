@@ -2,3 +2,65 @@
 :global(.pv-detail) .page{padding-top:0}
 @media(max-width:800px){.page{padding-top:125px}.breadcrumb>span{display:none}.hero{grid-template-columns:1fr}.heroCopy{padding:40px 6%}.hero h1{font-size:46px}.heroImage{min-height:0;aspect-ratio:16/10}.heroImage figcaption{bottom:10px;left:10px;padding:10px 14px}.heroImage figcaption strong{font-size:15px}.gallery,.tour{padding:40px 6%}.sectionTitle{flex-direction:column;align-items:start;gap:15px}.sectionTitle h2,.contact h2{font-size:31px}.grid{grid-template-columns:1fr;gap:25px}.tourFrame iframe{height:360px}.contact{flex-direction:column;align-items:start;padding:40px 6%}.card h3{font-size:16px}.filters button{padding:9px 12px;gap:10px}}
 @media(prefers-reduced-motion:reduce){.page *{transition:none!important;scroll-behavior:auto!important}}
+
+.portfolio {
+ padding: 65px 5%;
+ background: #e9eee4;
+ scroll-margin-top: 30px;
+}
+
+.portfolioCard {
+ min-width: 0;
+ background: white;
+ border: 1px solid #d6dfd2;
+ border-radius: 4px;
+}
+
+.portfolioLink {
+ display: block;
+}
+
+.portfolioImage {
+ position: relative;
+ aspect-ratio: 16 / 10;
+ overflow: hidden;
+ border-radius: 3px 3px 0 0;
+ background: #e3e8df;
+}
+
+.portfolioImage img {
+ object-fit: cover;
+}
+
+.portfolioDetails {
+ padding: 22px;
+}
+
+.portfolioDetails h3 {
+ font-size: 23px;
+ font-weight: 500;
+}
+
+.portfolioDetails > div {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ gap: 10px;
+ margin-top: 12px;
+ font-size: 14px;
+}
+
+.portfolioLink:hover .portfolioDetails span {
+ text-decoration: underline;
+}
+
+.actions {
+ flex-wrap: wrap;
+ align-items: center;
+}
+
+@media (max-width: 800px) {
+ .portfolio {
+  padding: 40px 6%;
+ }
+}
