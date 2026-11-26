@@ -43,8 +43,8 @@ export default function ArchitecturalVisualization({ onBack, onContactClick }) {
    <div className={styles.grid}>
     {portfolios.map(({ title, image, alt, href }) => (
      <article className={styles.portfolioCard} key={href}>
-      <a className={styles.portfolioLink} href={href} target="_blank" rel="noopener noreferrer"
-         aria-label={`Open ${title} portfolio in a new tab`}>
+      <a className={styles.portfolioLink} href={href}
+         aria-label={`Open ${title} portfolio`}>
        <div className={styles.portfolioImage}>
         <Image src={image} alt={alt} fill sizes="(max-width: 800px) 100vw, 45vw" />
        </div>
